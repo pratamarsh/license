@@ -1,0 +1,23 @@
+# Kredensial
+.env
+
+# Data & keluaran lokal
+*.db
+*.sqlite3
+leaderboard.html
+leaderboard.csv
+demo.db
+demo_report.html
+
+# Konfigurasi nyata (yang di-commit hanya contohnya)
+competitors.yml
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.venv/
+venv/

@@ -1,0 +1,41 @@
+# Contoh konfigurasi iglead.
+# Salin jadi competitors.yml lalu sesuaikan:
+#   cp competitors.example.yml competitors.yml
+
+# Akun Instagram Business milik sendiri. Opsional, tapi kalau diisi dan juga
+# didaftarkan di 'competitors', barisnya akan disorot sebagai pembanding.
+own_account: brand_saya
+
+# Daftar akun yang dipantau. Semua harus akun Business/Creator — akun personal
+# dan akun privat tidak bisa dibaca lewat business_discovery.
+# Boleh ditulis singkat (string) atau lengkap (dengan label tampilan).
+competitors:
+  - username: kompetitor_a
+    label: "Kompetitor A"
+  - username: kompetitor_b
+    label: "Kompetitor B"
+  - kompetitor_c
+  - brand_saya
+
+# Jumlah post terakhir yang ditarik per akun (maksimum 50 per batasan API).
+posts_limit: 25
+
+# Rentang hari untuk menghitung engagement rate dan frekuensi posting.
+lookback_days: 30
+
+# Rentang hari untuk membandingkan pertumbuhan follower.
+growth_window_days: 30
+
+# Bobot skor komposit. Nilainya otomatis dinormalisasi, jadi 35/25/15/15/10
+# sama saja dengan 0.35/0.25/0.15/0.15/0.10.
+#
+# Sesuaikan dengan tujuan Anda:
+#   - Kejar engagement  -> naikkan engagement_rate
+#   - Kejar jangkauan   -> naikkan followers
+#   - Pantau momentum   -> naikkan follower_growth_pct
+weights:
+  engagement_rate: 0.35
+  follower_growth_pct: 0.25
+  followers: 0.15
+  interactions_per_post: 0.15
+  posting_frequency: 0.10

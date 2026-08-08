@@ -1,0 +1,25 @@
+# Konfigurasi untuk data demo (lihat demo/seed_demo.py).
+own_account: brand_saya
+
+competitors:
+  - username: kopisenja
+    label: "Kopi Senja"
+  - username: rotibakarmalam
+    label: "Roti Bakar Malam"
+  - username: dapurumami
+    label: "Dapur Umami"
+  - username: nusantarabites
+    label: "Nusantara Bites"
+  - username: brand_saya
+    label: "Brand Saya"
+
+posts_limit: 25
+lookback_days: 30
+growth_window_days: 30
+
+weights:
+  engagement_rate: 0.35
+  follower_growth_pct: 0.25
+  followers: 0.15
+  interactions_per_post: 0.15
+  posting_frequency: 0.10

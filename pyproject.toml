@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iglead"
+version = "0.1.0"
+description = "Leaderboard kompetitor Instagram berbasis Instagram Graph API"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["PyYAML>=6.0"]
+
+[project.scripts]
+iglead = "iglead.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["iglead*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
